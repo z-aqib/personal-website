@@ -25,7 +25,7 @@ body {
     /* Ensure the header takes the full height of the viewport */
     position: relative;
     /* Needed for the pseudo-element positioning */
-    background-image: url(images/fffun.gif);
+    background-image: url(images/gif10_winnie_butterfly.gif);
     /* Use the GIF image from the images folder as a background image */
     background-size: cover;
     /* Ensure the background covers the entire div without stretching */
