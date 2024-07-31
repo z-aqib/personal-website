@@ -49,10 +49,43 @@ body {
     /* Cover the full width of the #header */
     height: 100%;
     /* Cover the full height of the #header */
-    background-color: rgba(102, 51, 153, 0.7);
+    /* background-color: rgba(102, 51, 153, 0.7); */
     /* add a Faint dark purple with opacity as bckg color */
     z-index: 1;
     /* Ensure it's on top of the background */
     pointer-events: none;
     /* Allow interactions with elements below the overlay */
+}
+
+.container {
+    /* add some padding to the text, so that it shifts to the right. 10px from top and bottom and 10% from the left side and right side*/
+    padding: 10px 10%;
+}
+
+nav {
+    display: flex;
+    /* flex means that image and links are side-by-side */
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.logo {
+    width: 120px;
+}
+
+nav ul li {
+    display: inline-block;
+    /* so now it is horizontally aligned */
+    list-style: none;
+    margin: 10px 20px;
+    /* we add margin so that we have space between the things, 10px from top and bottom and 20px from left and right side */
+}
+
+nav ul li a {
+    color: #fff;
+    /* makes the color of the text white */
+    text-decoration: none;
+    /* removes all text decorations such as underline */
+    font-size: 15px;
 }
