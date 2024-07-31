@@ -1,8 +1,13 @@
+/* the star * means universal selector, it does this for all elements on the page */
 * {
     margin: 0;
+    /* Remove default margins from all elements */
     padding: 0;
-    font-family: 'Poppins', sans-sherif;
+    /* Remove default padding from all elements */
+    font-family: 'Poppins', sans-serif;
+    /* Set the default font family */
     box-sizing: border-box;
+    /* Ensure padding and border are included in the element's total width and height */
 }
 
 body {
@@ -12,35 +17,42 @@ body {
     /* add text color as white */
 }
 
-/* use # infront of header as it is an ID */
+/* use # in front of header as it is an ID */
 #header {
     width: 100%;
+    /* Ensure the header takes the full width of the viewport */
     height: 100vh;
-    /* ensures the header takes full height of view port */
+    /* Ensure the header takes the full height of the viewport */
     position: relative;
+    /* Needed for the pseudo-element positioning */
     background-image: url(images/fffun.gif);
-    /* save your image into an images folder with the name of file as background.png */
+    /* Use the GIF image from the images folder as a background image */
     background-size: cover;
-    /* ensure the background covers the entire div without stretching */
+    /* Ensure the background covers the entire div without stretching */
     background-position: center;
-    /* center the image within the div */
+    /* Center the image within the div */
     background-repeat: no-repeat;
-    /* Prevents repeating the GIF */
-    
+    /* Prevent repeating the GIF */
 }
 
+/* add a layer on top of #header, add a shade of color on the bckg image */
 #header::after {
     content: "";
     /* Required for the pseudo-element */
     position: absolute;
+    /* Position the pseudo-element absolutely within the #header */
     top: 0;
+    /* Position at the top */
     left: 0;
+    /* Position at the left */
     width: 100%;
+    /* Cover the full width of the #header */
     height: 100%;
-    background-color: rgba(102, 51, 153, 0.8);
-    /* Faint dark purple with opacity */
+    /* Cover the full height of the #header */
+    background-color: rgba(102, 51, 153, 0.7);
+    /* add a Faint dark purple with opacity as bckg color */
     z-index: 1;
-    /* Ensures it's on top of the background */
+    /* Ensure it's on top of the background */
     pointer-events: none;
-    /* Allows interactions with elements below the overlay */
+    /* Allow interactions with elements below the overlay */
 }
