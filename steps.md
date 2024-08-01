@@ -221,3 +221,11 @@ so now when you reload your browser, the red line comes underneath the button ON
 play around with the transition speed to see the difference
 
 ### STEP 17
+add text and title to your welcome screen
+go to your HTML file and add a div after the <nav> tag, inside the <div id=header> tag. 
+```
+<div class="header-text">
+    <p> Your designation </p>
+    <h1> Main title, your name</h1>
+</div>
+```
