@@ -59,7 +59,7 @@ body {
     /* add some padding to the text, so that it shifts to the right. 10px from top and bottom and 10% from the left side and right side*/
     padding: 10px 10%;
     position: relative;
-    /* Make sure container is above the overlay */
+    /* Make sure container is above the color_overlay */
     z-index: 2;
     /* Ensure the content is on top of the overlay */
 }
@@ -90,4 +90,28 @@ nav ul li a {
     text-decoration: none;
     /* removes all text decorations such as underline */
     font-size: 15px;
+    position: relative;
+}
+
+nav ul li a::after {
+    content: "";
+    /* creates a pseudo-element with no content */
+    width: 0;
+    /* sets the width of the pseudo-element of the parent element */
+    height: 3px;
+    /* sets the height of the pseudo-element */
+    background: #ff004f;
+    /* sets the background color of the pseudo-element to a shade of color */
+    position: absolute;
+    /* positions the pseudo-element absolutely within the parent element */
+    left: 0;
+    /* positions the pseudo-element at the left edge of the parent element */
+    bottom: -6px;
+    /* positions the pseudo-element 6 pixels below the bottom edge of the parent element */
+    transition: 0.5s;
+    /* this puts the transition in 0.5 s which will happen whenever cursor hovers on it */
+}
+
+nav ul li a:hover::after {
+    width: 100%;
 }

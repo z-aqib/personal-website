@@ -170,3 +170,54 @@ nav ul li a {
     font-size: 10px;
 }
 ```
+
+## **Date** = Thursday, August 1, 2024
+
+### STEP 15
+now add a hover effect on these links using style.css
+```
+nav ul li a::after{
+    content:"";
+    width:100%;
+    height:3px;
+    background: #ff004f;
+    position:absolute;
+    /* as position here is absolute, make position in "nav ul li a" as relative */
+    left:0;
+    bottom:-6px;
+}
+```
+change the code in nav ul li a <position> to relative
+```
+nav ul li a{
+    position: relative;
+}
+```
+now when you refresh the browser, you will see a red colored link below all the links
+
+### STEP 16
+so now we want to hide these red lines and ONLY display them when the cursor hovers on them
+update your style.css code:
+```
+nav ul li a::after{
+    width: 0; 
+    /* so now the line is hidden */
+}
+```
+so now add this code
+```
+nav ul li a:hover::after {
+    width: 100%;
+}
+```
+now add a transition declaration in ```nav ul li a::after```
+```
+nav ul li a::after{
+    transition: 0.5s; 
+    /* this puts the transition in 0.5 s which will happen whenever cursor hovers on it */
+}
+```
+so now when you reload your browser, the red line comes underneath the button ONLY if you hover on it, and it comes slowly from left to right and then when you remove it goes back right to left.
+play around with the transition speed to see the difference
+
+### STEP 17
