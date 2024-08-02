@@ -248,13 +248,13 @@ now add some css to your h1 title specifically
 }
 ```
 
-## STEP 19
+### STEP 19
 if your text is too long, add a line break,
 ```
 text text <br> text text text
 ```
 
-## STEP 20
+### STEP 20
 add some color for half of the text or some specific words. do this by using the span tag around the words you want in a different color other than white
 ```
 text <span> text in another color </span> text in white
@@ -263,5 +263,86 @@ and add the following css
 ```
 .header-text h1 span {
     color: #ff004f; /* red */
+}
+```
+
+### STEP 21
+now we are done with the home page, now we will make the about page of the website
+first create a div, after the header div
+```
+#about + TAB
+```
+or
+```
+<div id="about">
+</div>
+```
+now add a container inside this div
+```
+.container + TAB
+```
+or
+```
+<div class="container">
+</div>
+```
+now in this container we have to create two columns, we do this by creating a div named row, and two column divs inside it
+```
+<div class="row">
+    <div class="about-col-1"></div>
+    <div class="about-col-2"></div>
+</div>
+```
+in the first column we will add an image and in the second column we will add text. now reload the browser, you should see that your screen is slightly scroll-able
+
+### STEP 22
+add an image to the first column, we do this by adding an img tag inside the first column
+```
+<img src="images/user.png>
+```
+on the right side in the second column, add some text, but first add a title regarding that text
+```
+<h1> About me </h1>
+```
+now reload your browser, you should see your image and the text below it
+
+### STEP 23
+now we want the image and text to be side by side. lets add some styling first
+```
+#about {
+    padding: 80px 0;
+    color:#ababab;
+    /* the text color is now a light gray, instead of white */
+}
+```
+now reload your browser and see that the about page comes with some space before the home page, and the text color ahs changed
+
+### STEP 24
+now add some styling to row
+```
+.row{
+    display:flex; 
+    /* so we did flex so that contents get side by side */
+    justify-content: space-between;
+    /* so that the contents are evenly spaced */
+    flex-wrap: wrap;
+}
+```
+now reload your browser, the image and text should be side by side. 
+
+### STEP 25
+now we will add styling to col-1 and its image
+```
+.about-col-1 {
+    flex-basis:35%;
+    /* it means that the width of the column will be 35 percent */
+}
+```
+now add styling for image
+```
+.about-col-1 img {
+    width: 100%;
+    border-radius: 15px; 
+    /* so the corner of the image will be round */
 }
 ```
