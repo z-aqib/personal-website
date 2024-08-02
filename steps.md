@@ -229,3 +229,39 @@ go to your HTML file and add a div after the <nav> tag, inside the <div id=heade
     <h1> Main title, your name</h1>
 </div>
 ```
+
+## **Date** = Friday, August 2, 2024
+### STEP 18
+now add some css to your name/designation/title
+```
+.header-text{
+    margin-top: 20%;
+    /* add some space from the top */
+    font-size: 30px;
+}
+```
+now add some css to your h1 title specifically
+```
+.header-text h1{
+    font-size: 60px; /* make it very large */
+    margin-top: 20px;
+}
+```
+
+## STEP 19
+if your text is too long, add a line break,
+```
+text text <br> text text text
+```
+
+## STEP 20
+add some color for half of the text or some specific words. do this by using the span tag around the words you want in a different color other than white
+```
+text <span> text in another color </span> text in white
+```
+and add the following css
+```
+.header-text h1 span {
+    color: #ff004f; /* red */
+}
+```
