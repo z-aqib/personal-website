@@ -3,7 +3,9 @@ These are the steps i followed.
 
 ## Important Milestones
 
+| ------- | ---- | ----- | ---- |
 | S.R No. | Date | Steps | Part |
+| ------- | ---- | ----- | ---- |
 | 1 | Monday, July 29, 2024 | 1 - 7 | 1 & 2 |
 | 2 | Wednesday, July 31, 2024 | 8 - 14 | 2 |
 | 3 | Thursday, August 1, 2024 | 15 - 17 | 2 |
