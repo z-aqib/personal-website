@@ -1,13 +1,16 @@
 # Steps to make your own portfolio
 These are the steps i followed.    
 
-## **Date** = Monday, July 29, 2024    
+## PART 1: START THE PROGRAM 
+
+ **Date** = Monday, July 29, 2024   
+ --------------------------------------- 
 
 ### STEP 1
- create an index.html file    
+ create an ```index.html``` file by creating a new file and naming it    
 
 ### STEP 2
- add basic HTML code:    
+ add basic HTML code inside your ```index.html``` file:    
 ```
 <!DOCTYPE html>
 <html lang="en">
@@ -22,9 +25,10 @@ These are the steps i followed.
 </body>
 </html>
 ```
+in between the ```<html>``` and ```</html>``` tags, there are two parts, ```<head>``` and ```<body>```. the head part will contain infromation about your website, and the body part will contain the contents of your website
 
 ### STEP 3
- create a file called style.css and add the following code:
+ create a file called ```style.css``` and add the following code:
 ```
 *{
     margin: 0;
@@ -33,39 +37,45 @@ These are the steps i followed.
     box-sizing: border-box;
 }
 ```
+this * means universal selector, it applies for all elements on the page
 
 ### STEP 4
- connect this file of style.css with our index.html by adding the code in the <head> and </head> area:
+ connect this file of ```style.css``` with our ```index.html``` by adding the code in between the ```<head>``` and ```</head>``` space:
 ```
 <link rel="stylesheet" href="style.css">
 ```
 
 ### STEP 5
- change your title in index.html to whatever you prefer
+ change your title in ```index.html``` to whatever you prefer, inside the ```<title>``` tag
+```
+<title> Add your title </title>
+```
 
 ### STEP 6
- add css for <body>:
+ add css for ```<body>```:
 ```
 body{
     background: #080808; /* add a dark color as the background */
     color: #fff; /* add text color as white */
 }
 ```
-and run this in your browser. you should see a black screen. 
+and run this in your browser. you should see a black screen as the background color is set to black.  
+
+## PART 2: HEADER
 
 ### STEP 7
- add your background image for the front that will popup when you open the website. do this by creating a <div> in index.html called "header", and use css to beautify it    
-code for index.html:
+ add your background image for the front that will popup when you open the website. do this by creating a ```<div>``` in ```index.html``` called "header", and use css to beautify it    
+code for ```index.html```:
 ```
 #header (tab)
 ```
-or:
+or type out:
 ```
 <div id="header>
 
 </div>
 ```
-code for style.css:
+code for ```style.css```:
 ```
 #header{
     /* use # infront of header as it is an ID */
@@ -76,13 +86,14 @@ code for style.css:
     background-position:center;
 }
 ```
-now re-load your website in your browser. 
+now re-load your website in your browser. you should see your background image covering the screen. 
 
-## **Date** = Wednesday, July 31, 2024
+ **Date** = Wednesday, July 31, 2024
+---------------------------------------
 
 ### STEP 8
- add a navigation bar with our logo   
-so for this, add a container in your HTML file inside the <header> id tag:
+ add a navigation bar with a logo. first we will add a logo.   
+ so for this, add a container in your HTML file inside the ```<header>``` id tag:
 ```
 .container + TAB
 ```
@@ -92,17 +103,17 @@ or
 
 </div>
 ```
-then add a <nav></nav> inside your <container> hashtag, and then add your logo image URL
+then add a ```<nav></nav>``` inside your ```<container>``` hashtag, and then add your logo image URL
 ```
 <nav>
     <img src="images/logo.png" class="logo>
 </nav>
 ```
-a <nav> tag defines a block of navigation links
+a ```<nav>``` tag defines a block of navigation links
 
 ### STEP 9
  add navigation buttons
-add it in your index.html, inside the <mav> hashtag
+ add it in your ```index.html```, inside the ```<nav>``` hashtag
 ```
 <ul>
     <li> <a href="#"> Home </a> </li>
@@ -115,17 +126,17 @@ add it in your index.html, inside the <mav> hashtag
 this makes an unordered list (bullets, not numbers), where each element in the list is hyper-linked, since there is no link address we use #
 
 ### STEP 10
- add css to the .container
+ add css to the ```<container>```
 ```
 .container {
     /* add some padding to the text, so that it shifts to the right */
-    padding: 10px 10%
+    padding: 10px 10%;
 }
 ```
 now reload and check, as the logo img is inside .container, it also shifts some space to the right
 
 ### STEP 11
-now add CSS for the <nav> tag
+now add CSS for the ```<nav>``` tag
 ```
 nav {
     display:flex;
@@ -149,7 +160,7 @@ now make the logo smaller by adding its css
 add CSS to the navigation buttons
 ```
 nav ul li {
-    display: inline-blocl;
+    display: inline-block;
     /* so now it is horizontally aligned */
     list-style: none;
     margin: 10px 20px;
@@ -171,10 +182,11 @@ nav ul li a {
 }
 ```
 
-## **Date** = Thursday, August 1, 2024
+ **Date** = Thursday, August 1, 2024
+ ---------------------------------------
 
 ### STEP 15
-now add a hover effect on these links using style.css
+now add a hover effect on these links using ```style.css```
 ```
 nav ul li a::after{
     content:"";
@@ -187,7 +199,7 @@ nav ul li a::after{
     bottom:-6px;
 }
 ```
-change the code in nav ul li a <position> to relative
+change the code in ```nav ul li a <position>``` to relative
 ```
 nav ul li a{
     position: relative;
@@ -197,7 +209,7 @@ now when you refresh the browser, you will see a red colored link below all the 
 
 ### STEP 16
 so now we want to hide these red lines and ONLY display them when the cursor hovers on them
-update your style.css code:
+update your ```style.css``` code:
 ```
 nav ul li a::after{
     width: 0; 
@@ -222,17 +234,20 @@ play around with the transition speed to see the difference
 
 ### STEP 17
 add text and title to your welcome screen
-go to your HTML file and add a div after the <nav> tag, inside the <div id=header> tag. 
+go to your HTML file and add a div after the ```<nav>``` tag, inside the ```<div id=header>``` tag. 
 ```
 <div class="header-text">
     <p> Your designation </p>
     <h1> Main title, your name</h1>
 </div>
 ```
+reload your browser, you should see the text you entered displayed in white
 
-## **Date** = Friday, August 2, 2024
+ **Date** = Friday, August 2, 2024
+ ---------------------------------------
+
 ### STEP 18
-now add some css to your name/designation/title
+now add some css to your name/designation/title, to make it at the correct place
 ```
 .header-text{
     margin-top: 20%;
@@ -240,7 +255,7 @@ now add some css to your name/designation/title
     font-size: 30px;
 }
 ```
-now add some css to your h1 title specifically
+now add some css to your ```h1``` title specifically
 ```
 .header-text h1{
     font-size: 60px; /* make it very large */
@@ -266,39 +281,43 @@ and add the following css
 }
 ```
 
+## PART 3: ABOUT
+
 ### STEP 21
 now we are done with the home page, now we will make the about page of the website
 first create a div, after the header div
 ```
 #about + TAB
 ```
-or
+or type out
 ```
 <div id="about">
+
 </div>
 ```
 now add a container inside this div
 ```
 .container + TAB
 ```
-or
+or type out
 ```
 <div class="container">
+
 </div>
 ```
-now in this container we have to create two columns, we do this by creating a div named row, and two column divs inside it
+now in this container we have to create two columns (because we want the left column to have a picture and the right to have text. this can be vice versa), we do this by creating a div named row, and two column divs inside it
 ```
 <div class="row">
     <div class="about-col-1"></div>
     <div class="about-col-2"></div>
 </div>
 ```
-in the first column we will add an image and in the second column we will add text. now reload the browser, you should see that your screen is slightly scroll-able
+in the first column we will add an image and in the second column we will add text. now reload the browser, you should see that your screen is slightly scroll-able. the scrolled screen will be the background color you set in the start
 
 ### STEP 22
 add an image to the first column, we do this by adding an img tag inside the first column
 ```
-<img src="images/user.png>
+<img src="images/user.png">
 ```
 on the right side in the second column, add some text, but first add a title regarding that text
 ```
@@ -346,3 +365,4 @@ now add styling for image
     /* so the corner of the image will be round */
 }
 ```
+now when you reload your browser, the image should be nice and small and round, and should take half of the screen on the left. 
