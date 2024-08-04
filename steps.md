@@ -1,10 +1,22 @@
 # Steps to make your own portfolio
 These are the steps i followed.  
 
+## Steps guidance
+
+No. of Parts: 
+| No. | Part | Steps |
+| --- | ---- | ----- |
+| 1 | Starting the website and adding universal information (creating the files and adding basic css) | 6 | 
+| 2 | HEADER: creating the header and welcome page (background, title, navigation buttons) | 14 | 
+| 3 | ABOUT: the second part after scrolling from welcome is about. creating the about page. |
+
+Total no. of parts: 
+
+Total no. of steps: 
+
 ## Important Milestones
 
-| ------- | ---- | ----- | ---- |
-| S.R No. | Date | Steps | Part |
+| No. | Date | Steps | Part |
 | ------- | ---- | ----- | ---- |
 | 1 | Monday, July 29, 2024 | 1 - 7 | 1 & 2 |
 | 2 | Wednesday, July 31, 2024 | 8 - 14 | 2 |
