@@ -4,7 +4,6 @@ These are the steps i followed.
 ## PART 1: START THE PROGRAM 
 
  **Date** = Monday, July 29, 2024   
- --------------------------------------- 
 
 ### STEP 1
  create an ```index.html``` file by creating a new file and naming it    
@@ -89,7 +88,6 @@ code for ```style.css```:
 now re-load your website in your browser. you should see your background image covering the screen. 
 
  **Date** = Wednesday, July 31, 2024
----------------------------------------
 
 ### STEP 8
  add a navigation bar with a logo. first we will add a logo.   
@@ -183,7 +181,6 @@ nav ul li a {
 ```
 
  **Date** = Thursday, August 1, 2024
- ---------------------------------------
 
 ### STEP 15
 now add a hover effect on these links using ```style.css```
@@ -244,7 +241,6 @@ go to your HTML file and add a div after the ```<nav>``` tag, inside the ```<div
 reload your browser, you should see the text you entered displayed in white
 
  **Date** = Friday, August 2, 2024
- ---------------------------------------
 
 ### STEP 18
 now add some css to your name/designation/title, to make it at the correct place
