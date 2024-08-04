@@ -1,5 +1,14 @@
 # Steps to make your own portfolio
-These are the steps i followed.    
+These are the steps i followed.  
+
+## Important Milestones
+
+| S.R No. | Date | Steps | Part |
+| 1 | Monday, July 29, 2024 | 1 - 7 | 1 & 2 |
+| 2 | Wednesday, July 31, 2024 | 8 - 14 | 2 |
+| 3 | Thursday, August 1, 2024 | 15 - 17 | 2 |
+| 4 | Friday, August 2, 2024 | 18 - 25 | 2 & 3 |
+| 5 | Sunday, August 4, 2024 | 26 -    | 3 | 
 
 ## PART 1: START THE PROGRAM 
 
