@@ -17,12 +17,13 @@ Total no. of steps:
 ## Important Milestones
 
 | No. | Date | Steps | Part |
-| ------- | ---- | ----- | ---- |
+| --- | ---- | ----- | ---- |
 | 1 | Monday, July 29, 2024 | 01 - 07 | 1 & 2 |
 | 2 | Wednesday, July 31, 2024 | 08 - 14 | 2 |
 | 3 | Thursday, August 01, 2024 | 15 - 17 | 2 |
 | 4 | Friday, August 02, 2024 | 18 - 25 | 2 & 3 |
-| 5 | Sunday, August 04, 2024 | 26 -    | 3 | 
+| 5 | Sunday, August 04, 2024 | 26 | 3 | 
+| 6 | Monday, August 05, 2024 | 27 -  | 3 |
 
 ## PART 1: Start the program 
 
@@ -397,3 +398,72 @@ now lets add some CSS to the second column i.e. the text side. we want the text 
 ```
 the first column is flex basis 35% and the second column is 60%. remaining 5% is the space between both columns (image and text). reload your browser, you should now see your text next to the image with some space insetad of the on far right like before.   
 play around with the flex basis to see how different percentages move the text. if the flex basis sum increases 100, the text will move below the image
+
+**Date** = Monday, August 05, 2024
+
+### STEP 27
+now lets change the font size and color of the text. we will first add a class name to the ```<h1>``` tag,
+```
+<h1 class="sub-title">
+```
+then copy this class name to ```style.css``` and start adding your styling,
+```
+.sub-title {
+    font-size: 60px;
+    font-weight: 600;
+    color: #fff;
+}
+```
+now reload in your browser, your "about me" text should be big, bold, and white. 
+
+### STEP 28
+now lets add some description regarding the picture in the second column. we will do this using a ```<p>``` tag
+```
+<p>
+    write your description regarding yourself here
+</p>
+```
+reload your browser to see the text displayed.
+
+### STEP 29
+now we will add tabs (skills, experience, education). we will do this by adding a second div inside the second column
+```
+<div class="tab-titles">
+</div>
+```
+now add title names
+```
+<p> Skills </p>
+<p> Experience </p>
+<p> Education </p>
+```
+make sure to alot them a class,
+```
+<p class="tab-links"> Skills </p>
+<p class="tab-links"> Experience </p>
+<p class="tab-links"> Education </p>
+```
+now reload your browser to see these three be listed normally. 
+
+### STEP 30
+now allign these titles by addings CSS
+```
+.tab-titles{
+    display:flex;
+    /* to make them side by side */
+    margin: 20px 0 40px;
+    /* 20px from top and 0 from left and right and 40px from bottom. */
+}
+```
+reload your browser to see them next to each other, in one line, with no space between them.   
+now add CSS to ```tab-links```
+```
+.tab-links {
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+```
+reload your browser to see them seperated with some space and click-able personality

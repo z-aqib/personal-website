@@ -166,3 +166,24 @@ nav ul li a:hover::after {
     flex-basis: 60%;
     /* remaining flex-basis of 5% (100-60-35) is the space between both columns */
 }
+
+.sub-title {
+    font-size: 50px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.tab-titles {
+    display: flex;
+    /* to make them side by side */
+    margin: 20px 0 40px;
+    /* 20px from top and 0 from left and right and 40px from bottom. */
+}
+
+.tab-links {
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
