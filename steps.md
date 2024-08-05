@@ -429,6 +429,7 @@ reload your browser to see the text displayed.
 now we will add tabs (skills, experience, education). we will do this by adding a second div inside the second column
 ```
 <div class="tab-titles">
+
 </div>
 ```
 now add title names
@@ -467,3 +468,32 @@ now add CSS to ```tab-links```
 }
 ```
 reload your browser to see them seperated with some space and click-able personality
+
+### STEP 31
+lets add some underline to the tab buttons, that is visible when we click them. this is done by CSS.
+```
+.tab-links::after {
+    content: "";
+    width: 0;
+    /* right now it is hidden. we will increase its width when hovered or clicked.  */
+    height: 3px;
+    background-color: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+```
+width will be 100 for the first tab. so to make that specific tab hovered, we will have to add a class name to it and define that. so we add
+```
+<p class="tab-links active-link"> Skills </p>
+```
+class names can be seperated by spaces.   
+now go to ```style.css``` and add CSS for this new class
+```
+/* now there is no space between class names */
+.tab-links.active-link::after{
+    width: 50%;
+}
+```
+now reload your browser and see the skills tab is half-hovered.
