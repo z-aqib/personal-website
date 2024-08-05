@@ -497,3 +497,32 @@ now go to ```style.css``` and add CSS for this new class
 }
 ```
 now reload your browser and see the skills tab is half-hovered.
+
+### STEP 32
+now we will add content to these tabs. for this we will make a new div after tab-titles but inside column2.
+```
+.tab-contents + TAB
+```
+or
+```
+<div class="tab-contents">
+</div>
+```
+now we will make a list to display all the SKILLS
+```
+<ul>
+    <li> skill 1 </li>
+    <li> skill 2 </li>
+    <li> skill 3 </li>
+</ul>
+```
+you can even make skills standout like adding a skill name and its description in the next line by,
+```
+<li> 
+    <span> Skill name </span>
+    <br> 
+    Skill description
+</li>
+```
+where ```<br>``` means new line
+reload your browser to see how they are displayed. 
