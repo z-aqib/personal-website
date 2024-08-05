@@ -3,7 +3,7 @@ These are the steps i followed.
 
 ## Steps guidance
 
-No. of Parts: 
+This website-making-process is divided into specific parts:
 | No. | Part | Steps |
 | --- | ---- | ----- |
 | 1 | Starting the website and adding universal information (creating the files and adding basic css) | 6 | 
@@ -18,13 +18,13 @@ Total no. of steps:
 
 | No. | Date | Steps | Part |
 | ------- | ---- | ----- | ---- |
-| 1 | Monday, July 29, 2024 | 1 - 7 | 1 & 2 |
-| 2 | Wednesday, July 31, 2024 | 8 - 14 | 2 |
-| 3 | Thursday, August 1, 2024 | 15 - 17 | 2 |
-| 4 | Friday, August 2, 2024 | 18 - 25 | 2 & 3 |
-| 5 | Sunday, August 4, 2024 | 26 -    | 3 | 
+| 1 | Monday, July 29, 2024 | 01 - 07 | 1 & 2 |
+| 2 | Wednesday, July 31, 2024 | 08 - 14 | 2 |
+| 3 | Thursday, August 01, 2024 | 15 - 17 | 2 |
+| 4 | Friday, August 02, 2024 | 18 - 25 | 2 & 3 |
+| 5 | Sunday, August 04, 2024 | 26 -    | 3 | 
 
-## PART 1: START THE PROGRAM 
+## PART 1: Start the program 
 
  **Date** = Monday, July 29, 2024   
 
@@ -83,7 +83,7 @@ body{
 ```
 and run this in your browser. you should see a black screen as the background color is set to black.  
 
-## PART 2: HEADER
+## PART 2: Header
 
 ### STEP 7
  add your background image for the front that will popup when you open the website. do this by creating a ```<div>``` in ```index.html``` called "header", and use css to beautify it    
@@ -300,7 +300,7 @@ and add the following css
 }
 ```
 
-## PART 3: ABOUT
+## PART 3: About
 
 ### STEP 21
 now we are done with the home page, now we will make the about page of the website
@@ -385,3 +385,15 @@ now add styling for image
 }
 ```
 now when you reload your browser, the image should be nice and small and round, and should take half of the screen on the left. 
+
+**Date** = Sunday, August 04, 2024
+
+### STEP 26
+now lets add some CSS to the second column i.e. the text side. we want the text next to the image instead of the far right. 
+```
+.about-col-2 {
+    flex-basis: 60%;
+}
+```
+the first column is flex basis 35% and the second column is 60%. remaining 5% is the space between both columns (image and text). reload your browser, you should now see your text next to the image with some space insetad of the on far right like before.   
+play around with the flex basis to see how different percentages move the text. if the flex basis sum increases 100, the text will move below the image
