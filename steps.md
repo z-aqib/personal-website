@@ -526,3 +526,5 @@ you can even make skills standout like adding a skill name and its description i
 ```
 where ```<br>``` means new line
 reload your browser to see how they are displayed. 
+
+**Date** = Tuesday, August 06, 2024

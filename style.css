@@ -13,7 +13,7 @@
 }
 
 body {
-    background: #795DA5;
+    background: #8b86b1;
     /* add a dark color as the background */
     color: #fff;
     /* add text color as white */
@@ -51,7 +51,7 @@ body {
     /* Cover the full width of the #header */
     height: 100%;
     /* Cover the full height of the #header */
-    background-color: rgba(102, 51, 153, 0.7);
+    background-color: rgba(102, 51, 153, 0.4);
     /* add a Faint dark purple with opacity as bckg color */
     z-index: 1;
     /* Ensure it's on top of the background */
@@ -137,7 +137,7 @@ nav ul li a:hover::after {
 #about {
     padding: 80px 0;
     /* 80px from top and bottom and 0 from left and right */
-    color: #ababab;
+    color: #fff;
     /* the text color is now a light gray, instead of white */
 }
 
@@ -171,6 +171,10 @@ nav ul li a:hover::after {
     font-size: 50px;
     font-weight: 600;
     color: #fff;
+}
+
+.about-col-2 p span {
+    color: #000000;
 }
 
 .tab-titles {
