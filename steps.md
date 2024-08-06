@@ -528,3 +528,15 @@ where ```<br>``` means new line
 reload your browser to see how they are displayed. 
 
 **Date** = Tuesday, August 06, 2024
+
+### STEP 33
+so this is an additional step, i played with colors of the text to see which color contrasts better. so after selecting a color, i asked chat GPT on how to make global variables so that i have to define the color only once. i added this code in ```style.css```,
+```
+:root {
+    --contrast-color:#fccbcb;
+}
+```
+and that i can reference it anywhere using
+```
+var(--contrast-color);
+```

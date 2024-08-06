@@ -13,10 +13,20 @@
 }
 
 body {
-    background: #8b86b1;
+    background: var(--purple_background);
     /* add a dark color as the background */
-    color: #fff;
+    color: var(--white);
     /* add text color as white */
+}
+
+/* global variables */
+:root {
+    --light_pink_text: #fccbcb;
+    --purple_background: #8b86b1;
+    --white: #fff;
+    --dark_pink: #ff004f;
+    --gray: #ababab;
+    --light_gray: #eeeee4;
 }
 
 /* ------------------ HEADER ------------------ */
@@ -68,6 +78,7 @@ body {
     /* Ensure the content is on top of the overlay */
 }
 
+/* navigation div */
 nav {
     display: flex;
     /* flex means that image and links are side-by-side */
@@ -80,6 +91,7 @@ nav {
     width: 120px;
 }
 
+/* navigation buttons */
 nav ul li {
     display: inline-block;
     /* so now it is horizontally aligned */
@@ -88,8 +100,9 @@ nav ul li {
     /* we add margin so that we have space between the things, 10px from top and bottom and 20px from left and right side */
 }
 
+/* navigation links */
 nav ul li a {
-    color: #fff;
+    color: var(--white);
     /* makes the color of the text white */
     text-decoration: none;
     /* removes all text decorations such as underline */
@@ -104,7 +117,7 @@ nav ul li a::after {
     /* sets the width of the pseudo-element of the parent element */
     height: 3px;
     /* sets the height of the pseudo-element */
-    background: #ff004f;
+    background: var(--dark_pink);
     /* sets the background color of the pseudo-element to a shade of color */
     position: absolute;
     /* positions the pseudo-element absolutely within the parent element */
@@ -120,12 +133,14 @@ nav ul li a:hover::after {
     width: 100%;
 }
 
+/* designation text on home screen */
 .header-text {
     margin-top: 20%;
     /* add some space from the top */
     font-size: 30px;
 }
 
+/* name text on home screen */
 .header-text h1 {
     font-size: 60px;
     /* make it very large */
@@ -137,7 +152,7 @@ nav ul li a:hover::after {
 #about {
     padding: 80px 0;
     /* 80px from top and bottom and 0 from left and right */
-    color: #fff;
+    color: var(--light_gray)
     /* the text color is now a light gray, instead of white */
 }
 
@@ -167,16 +182,19 @@ nav ul li a:hover::after {
     /* remaining flex-basis of 5% (100-60-35) is the space between both columns */
 }
 
+/* heading of "about" */
 .sub-title {
     font-size: 50px;
     font-weight: 600;
-    color: #fff;
+    color: var(--white);
 }
 
+/* highlighting of specific words inside paragraph of "about me" */
 .about-col-2 p span {
-    color: #000000;
+    color:var(--light_pink_text);
 }
 
+/* tabs of skills, experience & education */
 .tab-titles {
     display: flex;
     /* to make them side by side */
@@ -184,6 +202,7 @@ nav ul li a:hover::after {
     /* 20px from top and 0 from left and right and 40px from bottom. */
 }
 
+/* tab headings of skills, experience & education */
 .tab-links {
     margin-right: 50px;
     font-size: 18px;
@@ -197,14 +216,20 @@ nav ul li a:hover::after {
     width: 0;
     /* right now it is hidden. we will increase its width when hovered or clicked.  */
     height: 3px;
-    background-color: #ff004f;
+    background-color: var(--dark_pink);
     position: absolute;
     left: 0;
     bottom: -8px;
     transition: 0.5s;
 }
 
-/* now there is no space between class names */
+/* first tab (skills) is highlighted/clicked */
 .tab-links.active-link::after {
+    /* now there is no space between class names */
     width: 100%;
+}
+
+/* highlighting of specific words in the tab */
+.tab-content ul li span {
+    color: var(--light_pink_text);
 }
