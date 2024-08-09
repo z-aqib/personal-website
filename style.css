@@ -152,7 +152,7 @@ nav ul li a:hover::after {
 #about {
     padding: 80px 0;
     /* 80px from top and bottom and 0 from left and right */
-    color: var(--light_gray)
+    color: var(--light_gray);
     /* the text color is now a light gray, instead of white */
 }
 
@@ -191,7 +191,7 @@ nav ul li a:hover::after {
 
 /* highlighting of specific words inside paragraph of "about me" */
 .about-col-2 p span {
-    color:var(--light_pink_text);
+    color: var(--light_pink_text);
 }
 
 /* tabs of skills, experience & education */
@@ -229,7 +229,16 @@ nav ul li a:hover::after {
     width: 100%;
 }
 
+/* set your tab details */
+.tab-content ul li {
+    list-style: none;
+    /* this removes the bullet points */
+    margin: 10px 0;
+    /* 10px from top and bottom, 0from left and right */
+}
+
 /* highlighting of specific words in the tab */
 .tab-content ul li span {
     color: var(--light_pink_text);
+    font-size: 16px;
 }

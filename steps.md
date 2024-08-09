@@ -23,7 +23,9 @@ Total no. of steps:
 | 3 | Thursday, August 01, 2024 | 15 - 17 | 2 |
 | 4 | Friday, August 02, 2024 | 18 - 25 | 2 & 3 |
 | 5 | Sunday, August 04, 2024 | 26 | 3 | 
-| 6 | Monday, August 05, 2024 | 27 -  | 3 |
+| 6 | Monday, August 05, 2024 | 27 - 32 | 3 |
+| 7 | Tuesday, August 06, 2024 | 33 | 3 |
+| 8 | Friday, August 09, 2024 | 34 -  | 3 |
 
 ## PART 1: Start the program 
 
@@ -539,4 +541,23 @@ so this is an additional step, i played with colors of the text to see which col
 and that i can reference it anywhere using
 ```
 var(--contrast-color);
+```
+
+**Date** = Friday, August 09, 2024
+
+### STEP 34
+now we will add CSS to the table-contents div
+```
+.tab-contents ul li {
+    list-style: none;
+    margin: 10px 0;
+    /* 10px from top and bottom, 0from left and right */
+}
+```
+and make the headings slightly larger with differnet color
+```
+.tab-contents ul li span {
+    color: your-color;
+    font-size: 14px;
+}
 ```
