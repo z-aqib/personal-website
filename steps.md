@@ -561,3 +561,31 @@ and make the headings slightly larger with differnet color
     font-size: 14px;
 }
 ```
+
+### STEP 35
+now we will add contents for the experience and education tab. we will duplicate the div ```tab-contents``` and replace the contents now to experience
+```
+<div class="tab-content">
+    <ul>
+        <li> add your experience </li>
+    </ul>
+</div>
+```
+and upon refreshing your browser, you will see in the skills tab, all your skills and then experiences are coming together in one line
+
+### STEP 36
+add hyperlinks to your experience, by putting the text in ```<a> </a>``` tags and adding ```<a href="">``` where ```href``` has the link of the hyperlink. make sure the ```<span>``` tag is INSIDE the ```<a>``` tags. later, add CSS to remove the underline,
+```
+.tab-content ul li a {
+    text-decoration: none;
+    /* removes all text decorations such as underline */
+}
+```
+
+### STEP 37
+because your experienced company names are hyperlinked and in the form ```a``` then ```span```, you can make them bold by adding the css:
+```
+.tab-content ul li a span {
+    font-weight: bold;
+}
+```

@@ -242,3 +242,15 @@ nav ul li a:hover::after {
     color: var(--light_pink_text);
     font-size: 16px;
 }
+
+/* removing underlines from the hyperinks in the text in tabs */
+.tab-content ul li a {
+    text-decoration: none;
+    /* removes all text decorations such as underline */
+    color:var(--white);
+}
+
+/* making experienced company names bolder */
+.tab-content ul li a span {
+    font-weight: bold;
+}
