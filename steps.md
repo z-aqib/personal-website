@@ -692,3 +692,51 @@ now we want the text to come with the underline as well. we will add this code,
 document.getElementById(tabname).classList.add("active-tab");
 ```
 refresh your website and see how it runs. it should change tabs accordingly and work correctly.
+
+## PART 4: Services / News
+
+### STEP 46
+so now we want to create a services tab, but instead of this, im creating a news page tab that will give updates on what im doing at the moment or any recent achievements i have achieved (which is not possible to put in skills, experience or education).    
+to do this, we will first create a new div of "news", which starts AFTER the about div has ended
+```
+<!-- information of about div-->
+</div> 
+<div id="news"></div>
+```
+refresh and you should see that it is slightly more scrollable
+
+### STEP 47
+now again we will add a div of class name container,
+```
+<div class="container">
+</div>
+```
+
+### STEP 48
+now we will add a subtitle. in the about section, we created a class called ```sub-title```. so we will re-refer that class as its CSS is already done, so less work,
+```
+<h1 class="sub-title">Latest Updates & News</h1>
+```
+now refresh to see the heading
+
+### STEP 49
+now add the list of services/news in a column by creating a new div,
+```
+<div class="services-list">
+</div>
+```
+now add multiple services in this by first adding some CSS.
+```
+#news{
+    padding: 30px 0;
+    /* 30px from top and bottom & left right 0 */ 
+}
+
+.news-list {
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    /* it adds grid gap */
+    margin-top: 50px;
+}
+```
