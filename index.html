@@ -60,12 +60,12 @@
                     </p>
 
                     <div class="tab-titles">
-                        <p class="tab-links active-link"> Skills </p>
-                        <p class="tab-links"> Experience </p>
-                        <p class="tab-links"> Education </p>
+                        <p class="tab-links active-link" onclick="opentab('skills')"> Skills </p>
+                        <p class="tab-links" onclick="opentab('experience')"> Experience </p>
+                        <p class=" tab-links" onclick="opentab('education')"> Education </p>
                     </div>
 
-                    <div class="tab-content">
+                    <div class=" tab-content active-tab" id="skills">
                         <!-- SKILLS -->
                         <ul>
                             <li>
@@ -87,7 +87,7 @@
                         </ul>
                     </div>
 
-                    <div class="tab-content">
+                    <div class="tab-content" id="experience">
                         <!-- EXPERIENCE -->
                         <ul>
                             <li>
@@ -124,10 +124,40 @@
                         </ul>
                     </div>
 
+                    <div class="tab-content" id="education">
+                        <!-- EDUCATION -->
+                        <ul>
+                            <li>
+                                <span>BSCS</span> | <a href="https://www.iba.edu.pk/"><span>Institute of Business
+                                        Administration (IBA) Karachi</span></a> | <span>2022 - 2026</span> <br>
+                                CGPA: 3.64 | Bachelors in Science of Computer Science
+                            </li>
+                            <li>
+                                <span>Data Analytics Course</span> | <a><span>Leverify Quest</span></a> | <span>Jun 2024
+                                    - Jul 2024</span> <br>
+                                Passed | 5-week rigourous course on data analytics tools such as Microsoft Excel, Google
+                                Looker Studio, PowerBI and SQL <br>
+                                <a href="">// Link to the certificate</a>
+                            </li>
+                            <li>
+                                <span> Cambridge A-Levels</span> | <a href="https://college.alpha.edu.pk/"><span>Alpha
+                                        College</span></a> | <span>2020 - 2022</span> <br>
+                                2A*, 1A, 1C | Mathematics, Accounts, Physics, Chemistry
+                            </li>
+                            <li>
+                                <span>Cambridge O-Levels</span> | <a href="https://dps.edu.pk/"><span>Dawood Public
+                                        School</span></a> | <span>2018 - 2020</span> <br>
+                                2A*, 6A, 1B | Maths, Accounts, Chemistry, Physics, Computer Science, English,
+                                Pakistan-Studies, Urdu
+                            </li>
+                        </ul>
+                    </div>
+
                 </div>
             </div>
         </div>
     </div>
+    <script src="script.js"></script>
 </body>
 
 </html>

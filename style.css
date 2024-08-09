@@ -224,7 +224,7 @@ nav ul li a:hover::after {
 }
 
 /* first tab (skills) is highlighted/clicked */
-.tab-links.active-link::after {
+.tab-links.active-link:hover::after, .tab-links.active-link::after{
     /* now there is no space between class names */
     width: 100%;
 }
@@ -253,4 +253,13 @@ nav ul li a:hover::after {
 /* making experienced company names bolder */
 .tab-content ul li a span {
     font-weight: bold;
+}
+
+.tab-content {
+    display: none;
+}
+
+.tab-content.active-tab {
+    display: block;
+    /* this way it is visible */
 }

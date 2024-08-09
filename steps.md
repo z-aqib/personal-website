@@ -563,7 +563,7 @@ and make the headings slightly larger with differnet color
 ```
 
 ### STEP 35
-now we will add contents for the experience and education tab. we will duplicate the div ```tab-contents``` and replace the contents now to experience
+now we will add contents for the experience and education tab. we will duplicate the div ```tab-contents``` and replace the contents now to experience, same for education
 ```
 <div class="tab-content">
     <ul>
@@ -589,3 +589,106 @@ because your experienced company names are hyperlinked and in the form ```a``` t
     font-weight: bold;
 }
 ```
+
+### STEP 38
+now all these contents are displaying when we are on skills. we want to hide experience and only show it when we click it. so first we do this by going into ```style.css``` and hiding all the ```.tab-contents```
+```
+.tab-content {
+    display: none;
+}
+```
+now refresh the page and you will not see any skills experience or education
+
+### STEP 39
+but we need to display the first one which is skills. so how do we differentiate them? we do this by adding a second class name in the skills div,
+```
+<div class="tab-content active-tab">
+``` 
+and come back to the ```style.css``` and make this class displayed,
+```
+.tab-content.active-tab {
+    display: block; 
+    /* this way it is visible */
+}
+```
+so now after refreshing your page, you will see that skills is visible and experience & eductaion is hidden
+
+### STEP 40
+but now we need to add some feature that when experience is pressed it displays experience etc
+we will do this by using ```tab-titles``` and ```tab-links```. we will use ```onClick()``` events inside the ```<p>``` tag
+```
+<div class="tab-titles">
+    <p class="tab-links active-link" onclick="opentab('skills')"> Skills </p>
+    <p class="tab-links"onclick="opentab('experience')"> Experience </p>
+    <p class="tab-links"onclick="opentab('education')"> Education </p>
+</div>
+```
+in this we have used a function called ```opentab()``` and we have passed one string parameter, which is the name of the tab we are opening. 
+
+so now we will add an ID in ```tab-contents``` so that we are able to refer to them, 
+```
+<div class=" tab-content active-tab" id="skills">
+```
+and 
+```
+<div class="tab-content" id="experience">
+```
+and
+```
+<div class="tab-content" id="education">
+```
+
+### STEP 41
+create a new file called ```script.js```. this will have your ```onclick()``` functions. add the reference of this script using the line inside the ```<body>``` tag of ```index.html```
+```
+<script src="script.js"></script>
+```
+
+### STEP 42
+add a global variable called ```tablinks``` using the following code,
+```
+var tablinks = document.getElementByClassName("tab-links");
+```
+so now a variable has ```tab-links```, so add a variable for ```tab-contents```
+```
+var tabcontents = document.getElementByClassName("tab-contents");
+```
+
+### STEP 43
+now we will make a function ```opentab()``` with one argument, string
+```
+function opentab(tabname) {
+
+}
+```
+inside the function, add a ```for``` loop to iterate between tab links to find the tab to display,
+```
+    for(tablink of tablinks) {
+
+    }
+```
+now inside the ```for``` loop, get each ```tab-link``` and their class names and remove the class ```active-link```. this way we will add the ```active-link``` to the tab we are supposed to open
+```
+tablink.classList.remove("active-link");
+```
+now we will repeat the same thing for ```tab-contents``` to remove the class name ```active-tab```. do this by copy pasting the code and making the necessary changes
+```
+for (let tabcontent of tabcontents) {
+    tabcontent.classList.remove("active-tab");
+}
+```
+so now after refreshing the page, you will see that upon clicking anything (skills, experience or education), the underline and the information disappears. but no new information is displayed.
+
+### STEP 44
+now we will add code to display the correct tab's contents in ```script.js```,
+```
+event.currentTarget.classList.add("active-link);
+```
+so now after refreshing, we can see that content does not display but the underline does
+
+### STEP 45
+now we want the text to come with the underline as well. we will add this code,
+```
+document.getElementById(tabname).classList.add("active-tab");
+```
+refresh your website and see how it runs. it should change tabs accordingly and work correctly.
