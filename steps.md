@@ -4,11 +4,12 @@ These are the steps i followed.
 ## Steps guidance
 
 This website-making-process is divided into specific parts:
-| No. | Part | Steps |
-| --- | ---- | ----- |
-| 1 | Starting the website and adding universal information (creating the files and adding basic css) | 6 | 
-| 2 | HEADER: creating the header and welcome page (background, title, navigation buttons) | 14 | 
-| 3 | ABOUT: the second part after scrolling from welcome is about. creating the about page. |
+| No. | Part | Steps Number | No. of Steps |
+| --- | ---- | ------------ | ------------ |
+| 1 | Starting the website and adding universal information (creating the files and adding basic css) | 1 - 6 | 6 |
+| 2 | HEADER: creating the header and welcome page (background, title, navigation buttons) | 7 - 20 | 14 |
+| 3 | ABOUT: the picture & paragraph of the person + their skills, experience & education | 21 - 45 | 25 |
+| 4 | NEWS: latest works the person is working on, or any new qualifications/achievements they have done recently | 46 -  | x |
 
 Total no. of parts: 
 
@@ -25,7 +26,8 @@ Total no. of steps:
 | 5 | Sunday, August 04, 2024 | 26 | 3 | 
 | 6 | Monday, August 05, 2024 | 27 - 32 | 3 |
 | 7 | Tuesday, August 06, 2024 | 33 | 3 |
-| 8 | Friday, August 09, 2024 | 34 -  | 3 |
+| 8 | Friday, August 09, 2024 | 34 - 49 | 3 & 4 |
+| 9 | Saturday, August 10, 2024 | 50 -  | 4 |
 
 ## PART 1: Start the program 
 
@@ -740,3 +742,7 @@ now add multiple services in this by first adding some CSS.
     margin-top: 50px;
 }
 ```
+
+**Date** = Saturday, August 10, 2024
+
+### STEP 50
