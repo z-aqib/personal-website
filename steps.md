@@ -27,7 +27,7 @@ Total no. of steps:
 | 6 | Monday, August 05, 2024 | 27 - 32 | 3 |
 | 7 | Tuesday, August 06, 2024 | 33 | 3 |
 | 8 | Friday, August 09, 2024 | 34 - 49 | 3 & 4 |
-| 9 | Saturday, August 10, 2024 | 50 -  | 4 |
+| 9 | Sunday, August 11, 2024 | 50 -  | 4 |
 
 ## PART 1: Start the program 
 
@@ -743,6 +743,22 @@ now add multiple services in this by first adding some CSS.
 }
 ```
 
-**Date** = Saturday, August 10, 2024
+**Date** = Sunday, August 11, 2024
 
 ### STEP 50
+now we are done with grid layout. now lets add a div which will have the news -title and -description, it is inside the ```news-list```
+```
+<div>
+</div>
+```
+there is no class name of this div
+
+### STEP 51
+now add your news title in ```<h2>``` tags inside this new div
+```
+<h2> your news or services title </h2>
+```
+then add your description using a ```<p>``` tag
+```
+<p> your description here </p>
+```
