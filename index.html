@@ -13,14 +13,15 @@
 </head>
 
 <body>
-    <!-- -------------------- welcome/header ----------------- -->
+    <!-- ------------------- welcome/header ---------------- -->
     <div id="header">
         <div id="color_overlay">
             <!-- styling in css has been added, a background image with a shade of color on top of it -->
         </div>
         <div class="container">
-            <!-- define a block of navigation links -->
+            <!-- header buttons -->
             <nav>
+                <!-- define a block of navigation links -->
                 <img src="images/logo_pink.png" class="logo">
                 <ul> <!-- unordered list -->
                     <li> <a href="#"> Home </a> </li>
@@ -30,6 +31,8 @@
                     <li> <a href="#"> Contact </a> </li>
                 </ul>
             </nav>
+
+            <!-- heading text: one liners -->
             <div class="header-text">
                 <p> A programming and mathematics geek </p>
                 <h1> This is Zuha Aqib. </h1>
@@ -41,13 +44,18 @@
     <div id="about">
         <div class="container">
             <div class="row">
+                <!-- MY PICTURE -->
                 <div class="about-col-1">
                     <!-- add an image in this column -->
                     <img src="images/about_picture1.jpg">
                 </div>
+                <!-- MY INFORMATION -->
                 <div class="about-col-2">
+
                     <!-- add the title to that image -->
                     <h1 class="sub-title"> About Zuha </h1>
+
+                    <!-- about me paragraph -->
                     <p>
                         Zuha is a <span>smiler</span>. She spreads positivity by making the world happy - which is,
                         being a good team player and a strong leader. She smiles herself when her code compiles with
@@ -60,27 +68,32 @@
                         her.
                     </p>
 
+                    <!-- sub-headings about things i want to include -->
                     <div class="tab-titles">
                         <p class="tab-links active-link" onclick="opentab('skills')"> Skills </p>
                         <p class="tab-links" onclick="opentab('experience')"> Experience </p>
                         <p class=" tab-links" onclick="opentab('education')"> Education </p>
                     </div>
 
+                    <!-- heading 1: skills -->
                     <div class=" tab-content active-tab" id="skills">
-                        <!-- SKILLS -->
                         <ul>
+                            <!-- data analysis -->
                             <li>
                                 <span> Data Analysis </span> <br>
                                 Microsoft Excel, Google Sheets, Microsoft PowerBI, Google Looker Studio
                             </li>
+                            <!-- web development -->
                             <li>
                                 <span> Web Development </span> <br>
                                 Node.js, HTML, CSS, JavaScript
                             </li>
+                            <!-- programmer -->
                             <li>
                                 <span> Programming Developer & Software </span> <br>
                                 Java, Python, RISC-V
                             </li>
+                            <!-- maths teacher -->
                             <li>
                                 <span> Mathematics Teacher </span> <br>
                                 O & A-Level, and University Test Preparation teacher
@@ -88,9 +101,10 @@
                         </ul>
                     </div>
 
+                    <!-- heading 2: experience -->
                     <div class="tab-content" id="experience">
-                        <!-- EXPERIENCE -->
                         <ul>
+                            <!-- octanet -->
                             <li>
                                 <span>Java Development Intern</span> | <a><span>OctaNet Services Ltd. </span></a> |
                                 <span>Jun 2024 - Jul 2024</span> <br>
@@ -98,12 +112,14 @@
                                 using object-oriented programming <br>
                                 <a href="https://github.com/z-aqib/OctanetInternshipJava.git"> ... see more </a>
                             </li>
+                            <!-- tutify -->
                             <li>
                                 <span>Mathematics Teacher</span> | <a
                                     href="https://www.tutify.org/"><span>Tutify</span></a> | <span>Jan 2024 -
                                     Present</span> <br>
                                 Mathematics Tutor, teaching O & A-Level students one-to-one online.
                             </li>
+                            <!-- tcf adp -->
                             <li>
                                 <span>Mathematics Instructor</span> | <a
                                     href="https://www.linkedin.com/company/tcf-adp/"><span>TCF-ADP at IBA</span></a> |
@@ -111,6 +127,7 @@
                                 Mathematics Instructor & Best Intern of Summer, prepared students for University Maths
                                 Test.
                             </li>
+                            <!-- iba cws -->
                             <li>
                                 <span>Social Intern</span> | <a
                                     href="https://www.linkedin.com/company/ibacws/"><span>IBA Community Welfare
@@ -125,14 +142,16 @@
                         </ul>
                     </div>
 
+                    <!-- heading 3: education -->
                     <div class="tab-content" id="education">
-                        <!-- EDUCATION -->
                         <ul>
+                            <!-- bachelors -->
                             <li>
                                 <span>BSCS</span> | <a href="https://www.iba.edu.pk/"><span>Institute of Business
                                         Administration (IBA) Karachi</span></a> | <span>2022 - 2026</span> <br>
                                 CGPA: 3.64 | Bachelors in Science of Computer Science
                             </li>
+                            <!-- leverify course -->
                             <li>
                                 <span>Data Analytics Course</span> | <a
                                     href="https://leverifyquest.com/data-analytics-course/"><span>Leverify
@@ -142,11 +161,13 @@
                                 Looker Studio, PowerBI and SQL <br>
                                 <a href="">// Link to the certificate</a>
                             </li>
+                            <!-- a levels -->
                             <li>
                                 <span> Cambridge A-Levels</span> | <a href="https://college.alpha.edu.pk/"><span>Alpha
                                         College</span></a> | <span>2020 - 2022</span> <br>
                                 2A*, 1A, 1C | Mathematics, Accounts, Physics, Chemistry
                             </li>
+                            <!-- o levels -->
                             <li>
                                 <span>Cambridge O-Levels</span> | <a href="https://dps.edu.pk/"><span>Dawood Public
                                         School</span></a> | <span>2018 - 2020</span> <br>
@@ -165,10 +186,37 @@
     <div id="news">
         <div class="container">
             <h1 class="sub-title"> News </h1>
+            <!-- list of news -->
             <div class="news-list">
+                <!-- NEWS 1: MOCs in OGala'24 -->
                 <div>
-                    <h2>News 1</h2>
-                    <p>News description 1</p>
+                    <h2>MOC - Hosted IBA OGala'24</h2>
+                    <div>
+                        <img src="images/about_picture1.jpg">
+                    </div>
+                    <p>
+                        [ MOC: Master of Ceremonies ]
+                        <br>
+                        On 16 to 18 Aug, my co-host and <span>I hosted the IBA Orientation Gala</span>, and were the
+                        dedicated MOCs for 8 orientations for the three schools: business studies; computer science and
+                        maths; & social sciences and economics. <span>I represented the university</span> by encouraging
+                        the new students and introducing our estemed heads to the stage such as the Executive Director
+                        of IBA, the Dean of Student Affairs, the Registrar, the Dean and Chairpersons of each school,
+                        the Quality Enhancement Cell (QEC) and the Finance Office.
+                    </p>
+                    <a href="#">Learn more</a>
+                </div>
+                <!-- NEWS 2 -->
+                <div>
+                    <h2>News 2</h2>
+                    <p>Information on news 2</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <!-- NEWS 3 -->
+                <div>
+                    <h2>News 3</h2>
+                    <p>Information on news 3</p>
+                    <a href="#">Learn more</a>
                 </div>
             </div>
         </div>

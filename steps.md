@@ -27,7 +27,8 @@ Total no. of steps:
 | 6 | Monday, August 05, 2024 | 27 - 32 | 3 |
 | 7 | Tuesday, August 06, 2024 | 33 | 3 |
 | 8 | Friday, August 09, 2024 | 34 - 49 | 3 & 4 |
-| 9 | Sunday, August 11, 2024 | 50 -  | 4 |
+| 9 | Sunday, August 11, 2024 | 50 - 51 | 4 |
+| 10 | Tuesday, August 20, 2024 | 52 -  | 4 |
 
 ## PART 1: Start the program 
 
@@ -762,3 +763,12 @@ then add your description using a ```<p>``` tag
 ```
 <p> your description here </p>
 ```
+and then add a ```<a>``` tag to add your Learn More link
+```
+<a href="#"> Learn more </a>
+```
+
+**Date** = Tuesday, August 20, 2024
+
+### STEP 52
+add three news/services in total, each in a seperate ```<div>```
