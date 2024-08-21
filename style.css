@@ -273,6 +273,7 @@ nav ul li a:hover::after {
     /* 30px from top and bottom & left right 0 */
 }
 
+/* spacing of news grids */
 .news-list {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -281,15 +282,18 @@ nav ul li a:hover::after {
     margin-top: 50px;
 }
 
+/* news paragraph: highlight important details */
 .news-list p span {
     color:purple;
     font-weight: bold;
 }
 
+/* image on news, make it inside the news box */
 .news-list div {
     overflow: hidden;
 }
 
+/* image on news, make it inside the box with full size */
 .news-list img {
     width: 100%;
     height: auto;
