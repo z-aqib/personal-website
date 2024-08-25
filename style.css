@@ -23,6 +23,7 @@ body {
 :root {
     --light_pink_text: #fccbcb;
     --purple_background: #8b86b1;
+    --purple_shade: #a6a3be;
     --white: #fff;
     --dark_pink: #ff004f;
     --gray: #ababab;
@@ -37,7 +38,7 @@ body {
 #header {
     width: 100%;
     /* Ensure the header takes the full width of the viewport */
-    height: 100vh; 
+    height: 100vh;
     /* Ensure the header takes the full height of the viewport */
     position: relative;
     /* Needed for the pseudo-element positioning */
@@ -226,7 +227,8 @@ nav ul li a:hover::after {
 }
 
 /* first tab (skills) is highlighted/clicked */
-.tab-links.active-link:hover::after, .tab-links.active-link::after{
+.tab-links.active-link:hover::after,
+.tab-links.active-link::after {
     /* now there is no space between class names */
     width: 100%;
 }
@@ -249,7 +251,7 @@ nav ul li a:hover::after {
 .tab-content ul li a {
     text-decoration: none;
     /* removes all text decorations such as underline */
-    color:var(--white);
+    color: var(--white);
 }
 
 /* making experienced company names bolder */
@@ -284,13 +286,8 @@ nav ul li a:hover::after {
 
 /* news paragraph: highlight important details */
 .news-list p span {
-    color:purple;
-    font-weight: bold;
-}
-
-/* image on news, make it inside the news box */
-.news-list div {
-    overflow: hidden;
+    color: purple;
+    /* font-weight: bold; */
 }
 
 /* image on news, make it inside the box with full size */
@@ -298,4 +295,41 @@ nav ul li a:hover::after {
     width: 100%;
     height: auto;
     object-fit: cover;
+}
+
+/* news styling: background, padding, shaping of box */
+.news-list div {
+    background: var(--purple_shade);
+    /* add a shade of background, lighter then the background */
+    padding: 30px;
+    /* add a padding on all sides */
+    font-size: 14px;
+    font-weight: 300;
+    border-radius: 15px;
+    /* make the sides round */
+    transition: background 0.5s, transform 0.5s;
+    /* take this time to move from hover state to normal state and vice versa */
+    overflow: hidden;
+}
+
+.news-list div h2 {
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+/* news links: white color, not underlined */
+.news-list div a{
+    text-decoration: none;
+    color: var(--white);
+    font-size: 12px;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.news-list div:hover {
+    background: var(--gray);
+    /* make the color slightly change */
+    transform: translateY(-10px);
+    /* make the box move slightly up */
 }

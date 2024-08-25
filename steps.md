@@ -772,3 +772,75 @@ and then add a ```<a>``` tag to add your Learn More link
 
 ### STEP 52
 add three news/services in total, each in a seperate ```<div>```
+
+**Date** = Wednesday, August 21, 2024
+
+### STEP 53
+add any icons if you are making services. icons may be taken from 
+```
+fontawesome.com
+```
+create an account for free, then go to kits, and click the first kit, and get the script line. add it to your HTML file.   
+then go to icons and take the HTML code of the icon you want. add this HTML code before the ```<h2>``` tag
+
+### STEP 54
+now we will add CSS to the grid. use the id of your first div, ```news-list``` and its inner div for each news
+```
+.news-list div {
+    background: #262626;
+    /* add a shade of background, lighter then the background */
+    padding: 40px;
+    /* add a padding on all sides */
+    font-size: 13px;
+    font-weight: 300;
+    border-right: 10px;
+    /* make the sides round */
+}
+```
+reload, you should see your news have a background behind them and with padding
+
+### STEP 55
+now add some CSS to your ```<i>``` tags, to the icons,
+```
+.news-list div i {
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+```
+
+### STEP 56
+now lets make titles size bigger and then add some styling to the links
+```
+.news-list div h2 {
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+```
+now add styling for links
+```
+.news-list div a{
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+    margin-top: 20px;
+    display: inline-block;
+}
+```
+
+### STEP 57
+now lets add some hover effect on the news divs
+```
+.news-list div:hover {
+    background: #ff004f;
+    /* make the color slightly change */
+    transform: translateY(-10px);
+    /* make the box move slightly up */
+}
+```
+now add some transition
+```
+.news-list div {
+    transition: background 0.5s, transform 0.5s;
+}
+```
